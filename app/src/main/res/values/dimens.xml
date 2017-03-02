@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Text sizes -->
+    <dimen name="mascota_cardview_text">26dp</dimen>
+    <dimen name="mascota_text">20dp</dimen>
+
+
+    <!-- Icon sizes -->
+    <dimen name="height_icon">36dp</dimen>
+    <dimen name="width_icon">36dp</dimen>
+    <dimen name="contact_form_padding">50dp</dimen>
+    <dimen name="elevation_actionbar">4dp</dimen>
+    <dimen name="app_text">25dp</dimen>
+    <dimen name="cardview_w_my_pet">90dp</dimen>
+    <dimen name="cardview_h_my_pet">110dp</dimen>
+</resources>

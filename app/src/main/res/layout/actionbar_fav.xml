@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevation_actionbar"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:id="@+id/action_bar_no_fav"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <ImageView
+                android:id="@+id/left_huella"
+                android:layout_width="@dimen/width_icon"
+                android:layout_height="@dimen/height_icon"
+                android:src="@drawable/huella_perro"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                />
+                <TextView
+                    android:id="@+id/toolbarTitulo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/app_text"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left"
+                    android:layout_toRightOf="@+id/left_arrow"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

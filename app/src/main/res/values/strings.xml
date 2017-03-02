@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="texto_boton_inicio">Entrar</string>
+    <string name="nombre_mascota">Cookie</string>
+    <string name="raiting_mascota">7</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="petagram">Petagram</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_acerca_de">Acerca de</string>
+
+
+    <!-- Contacto -->
+    <string name="menu_contacto">Contacto</string>
+    <string name="form_username">Username</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="email">Email</string>
+    <string name="telefono">Teléfono</string>
+    <string name="fecha_nacimiento">Fecha nacimiento</string>
+    <string name="descripcion_contacto">Descripción contacto</string>
+    <string name="temail">Email: </string>
+    <string name="ttelefono">Teléfono: </string>
+    <string name="tfecha_nacimiento">Fecha nacimiento: </string>
+    <string name="tdescripcion">Descripción: </string>
+    <string name="buton_siguiente">Siguiente</string>
+    <string name="editar_contacto">Editar datos</string>
+    <string name="goHome">Volver</string>
+
+    <!-- Confirmación contacto -->
+    <string name="confirmar_datos">¡Gracias por contactarnos!</string>
+    <string name="mensaje">mensaje</string>
+    <string name="au_edad">Edad: 30</string>
+    <string name="au_nombre">Ángel Sevilla</string>
+    <string name="au_ciudad">Madrid</string>
+    <string name="my_pet_name">Ronny</string>
+
+
+</resources>

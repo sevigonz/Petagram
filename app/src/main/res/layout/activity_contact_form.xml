@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_favoritas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sevigonz.petagram.ContactFormActivity">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/actionbar"></include>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linear_layout_contact_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/contact_form_padding"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/f_c_nombre_completo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:ems="10"
+            android:hint="@string/nombre_completo"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/f_c_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/f_c_mensage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.45"
+            android:ems="10"
+            android:hint="@string/mensaje"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/f_c_enviar_contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/contact_form_padding"
+        android:text="@string/buton_siguiente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+</android.support.design.widget.CoordinatorLayout>

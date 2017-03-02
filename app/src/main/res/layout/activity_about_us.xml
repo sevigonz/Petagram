@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_favoritas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sevigonz.petagram.AboutUsActivity">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/actionbar"></include>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_contact"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/app_text"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="@string/au_nombre"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/au_ciudad"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="18dp"
+        android:layout_marginBottom="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/au_edad"
+        android:text="@string/au_edad"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="18dp"
+        android:layout_marginBottom="32dp"/>
+
+
+
+
+    <Button
+        android:id="@+id/goHome"
+        android:text="@string/goHome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        style="@style/Widget.AppCompat.Button" />
+
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
