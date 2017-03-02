@@ -55,8 +55,8 @@ public class ContactForm {
 
     public  void sendMail() {
 
-        final String username = "aquitu email@gmail.com";
-        final String password = "aquitupass";
+        final String username = "aqui_tu email@gmail.com";
+        final String password = "aqui_tu_pass";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -74,12 +74,13 @@ public class ContactForm {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("from-email@gmail.com"));
+            message.setFrom(new InternetAddress("petagram@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("to-email@gmail.com"));
             message.setSubject("Testing Subject");
             message.setText("Dear Mail Crawler,"
-                    + "\n\n No spam to my email, please!");
+                    + "\n\n No spam to my email, please!" +
+                    "Envío desde Petagram");
 
             Transport.send(message);
 
