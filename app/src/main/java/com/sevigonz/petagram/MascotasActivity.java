@@ -45,6 +45,9 @@ public class MascotasActivity extends PetagramAppActivity {
         viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), agregarFragments()));
         tabLayout.setupWithViewPager(viewPager);
 
+        tabLayout.getTabAt(0).setIcon(R.drawable.gato_3);
+        tabLayout.getTabAt(1).setIcon(R.drawable.perro_2);
+
     }
 
 

@@ -67,7 +67,7 @@ public class MascotaAdaptador extends  RecyclerView.Adapter<MascotaAdaptador.Mas
 
                     Integer _current_raiting = Integer.parseInt((_raiting.getText().toString()));
                     Integer _final_raiting = _current_raiting + 1;
-                    //_raiting.setText(String.valueOf(_final_raiting));
+                    _raiting.setText(String.valueOf(_final_raiting));
                     finalMascota.setLiked(true);
                     //Display message
                     Toast.makeText(activity, "Ahora te gusta " + finalMascota.getNombre(), Toast.LENGTH_SHORT).show();
@@ -75,7 +75,7 @@ public class MascotaAdaptador extends  RecyclerView.Adapter<MascotaAdaptador.Mas
                 } else {
                     Integer _current_raiting = Integer.parseInt((_raiting.getText().toString()));
                     Integer _final_raiting = _current_raiting - 1;
-                    //_raiting.setText(String.valueOf(_final_raiting));
+                    _raiting.setText(String.valueOf(_final_raiting));
                     finalMascota.setLiked(false);
                     //Display message
                     Toast.makeText(activity, "Ya no te gusta " + finalMascota.getNombre(), Toast.LENGTH_SHORT).show();

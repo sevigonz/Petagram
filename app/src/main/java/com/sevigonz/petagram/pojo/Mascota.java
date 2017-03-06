@@ -6,6 +6,7 @@ package com.sevigonz.petagram.pojo;
 
 public class Mascota {
 
+    private int  id;
     private String nombre;
     private int  imagen;
     private int raiting;
