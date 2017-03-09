@@ -1,4 +1,4 @@
-package com.sevigonz.petagram.pojo;
+package com.sevigonz.petagram.model;
 
 import java.util.Properties;
 

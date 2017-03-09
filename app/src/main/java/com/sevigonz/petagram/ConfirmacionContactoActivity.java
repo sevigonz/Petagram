@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.sevigonz.petagram.pojo.ContactForm;
+import com.sevigonz.petagram.model.ContactForm;
 
 public class ConfirmacionContactoActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.sevigonz.petagram.pojo;
+package com.sevigonz.petagram.model;
 
 /**
  * Created by angel on 21/02/17.
@@ -6,9 +6,9 @@ package com.sevigonz.petagram.pojo;
 
 public class Mascota {
 
-    private int  id;
+    private int id;
     private String nombre;
-    private int  imagen;
+    private int imagen;
     private int raiting;
     private boolean liked;
 
@@ -16,6 +16,18 @@ public class Mascota {
         this.nombre = nombre;
         this.raiting = raiting;
         this.imagen = imagen;
+    }
+
+    public Mascota() {
+
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNombre() {
@@ -49,4 +61,5 @@ public class Mascota {
     public void setLiked(boolean liked) {
         this.liked = liked;
     }
+
 }

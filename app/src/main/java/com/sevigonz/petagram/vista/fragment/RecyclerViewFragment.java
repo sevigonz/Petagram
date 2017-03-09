@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.sevigonz.petagram.R;
 import com.sevigonz.petagram.adapter.MascotaAdaptador;
-import com.sevigonz.petagram.pojo.Mascota;
+import com.sevigonz.petagram.model.Mascota;
 
 import java.util.ArrayList;
 

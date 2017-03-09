@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.sevigonz.petagram.R;
 import com.sevigonz.petagram.adapter.MyPetAdaptador;
-import com.sevigonz.petagram.pojo.Mascota;
+import com.sevigonz.petagram.model.Mascota;
 
 import java.util.ArrayList;
 
@@ -75,10 +75,6 @@ public class MyPetFragment extends Fragment {
         mascotas.add(new Mascota("Ronny", R.drawable.perro_2, 2));
         mascotas.add(new Mascota("Ronny", R.drawable.perro_2, 6));
         mascotas.add(new Mascota("Ronny", R.drawable.perro_2, 9));
-        mascotas.add(new Mascota("Ronny", R.drawable.perro_2, 3));
-        mascotas.add(new Mascota("Ronny", R.drawable.perro_2, 2));
-        mascotas.add(new Mascota("Ronny", R.drawable.perro_2, 12));
-        mascotas.add(new Mascota("Ronny", R.drawable.perro_2, 8));
     }
 
 

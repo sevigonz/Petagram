@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.sevigonz.petagram.pojo.ContactForm;
+import com.sevigonz.petagram.model.ContactForm;
 
 public class ContactFormActivity extends PetagramAppActivity {
 

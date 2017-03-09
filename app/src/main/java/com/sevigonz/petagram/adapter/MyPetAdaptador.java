@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sevigonz.petagram.R;
-import com.sevigonz.petagram.pojo.Mascota;
+import com.sevigonz.petagram.model.Mascota;
 
 import java.util.ArrayList;
 

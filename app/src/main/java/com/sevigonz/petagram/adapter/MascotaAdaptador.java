@@ -11,7 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sevigonz.petagram.R;
-import com.sevigonz.petagram.pojo.Mascota;
+import com.sevigonz.petagram.model.ConstructorMascotas;
+import com.sevigonz.petagram.model.Mascota;
 
 import java.util.ArrayList;
 
@@ -48,8 +49,8 @@ public class MascotaAdaptador extends  RecyclerView.Adapter<MascotaAdaptador.Mas
     }
 
     @Override
-    public void onBindViewHolder(MascotaViewHolder mascotaViewHolder, int position) {
-        Mascota mascota = mascotas.get(position);
+    public void onBindViewHolder(final MascotaViewHolder mascotaViewHolder, int position) {
+        final Mascota mascota = mascotas.get(position);
         mascotaViewHolder.mascotaImagen.setImageResource(mascota.getImagen());
         mascotaViewHolder.nombre.setText(mascota.getNombre());
         mascotaViewHolder.raiting.setText(String.valueOf(mascota.getRaiting()));
@@ -63,7 +64,7 @@ public class MascotaAdaptador extends  RecyclerView.Adapter<MascotaAdaptador.Mas
                 TextView _raiting = (TextView) activity.findViewById(R.id.raiting_mascota);
 
 
-                if(!finalMascota.isLiked()){
+                /*if(!finalMascota.isLiked()){
 
                     Integer _current_raiting = Integer.parseInt((_raiting.getText().toString()));
                     Integer _final_raiting = _current_raiting + 1;
@@ -80,7 +81,16 @@ public class MascotaAdaptador extends  RecyclerView.Adapter<MascotaAdaptador.Mas
                     //Display message
                     Toast.makeText(activity, "Ya no te gusta " + finalMascota.getNombre(), Toast.LENGTH_SHORT).show();
                 }
+                //          */
 
+
+                Toast.makeText(activity, "Diste like a " + mascota.getNombre(),
+                        Toast.LENGTH_SHORT).show();
+
+
+                ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity);
+                constructorMascotas.darLikeMascota(mascota);
+                mascotaViewHolder.raiting.setText(String.valueOf(constructorMascotas.obtenerLikesMascota(mascota)));
             }
         });
 
